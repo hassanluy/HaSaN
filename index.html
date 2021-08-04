@@ -1,57 +1,181 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>HaSaN's WebSite</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="imgages/code.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="top-container">
-      <img class="top-cloud"src="imgages/cloud.png" alt="cloud-image">
-      <h1>I'm HaSaN.</h1>
-      <h2>A <span class="pro">pro</span>grammer.</h2>
-      <img class="bottom-cloud"src="imgages/cloud.png" alt="cloud-image">
-      <img src="imgages/mountain.png" alt="mountain-image">
-    </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img src="imgages/hasan.png" alt="profile-photo">
-        <h2>Hello.</h2>
-        <p> I'm HaSaN my age is 20 years old and i'm a web designer and student in the UOT in the first class and I Love Books,Anime,Drawing,Dancing,meditation,Sport and of course programming....i almost forgot i also love water!!!</p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="computer-img" src="imgages/computer.png" alt="computer-photo">
-          <h3>Typing Touch</h3>
-          <p class="skill-typing-description">I have a very lovely skill which is typing on keyboard without looking on it and this skill was very helpful for me specilly when i have a more and more words to write on the webpage and the benefit of this skill appear when i have and artical about the english to write about it in the middle and i was having only about 2 hour to complete my artical and this skill in that time help me alot. </p>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- css style -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- java.s -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="title" class="colored-section">
+    <div class="container-fluid">
+      <!--- navbar --->
+      <nav class="navbar  navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Tindog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
         </div>
-        <div class="skill-row">
-          <img class="code-img" src="imgages/coding.png" alt="meditation-photo">
-          <h3>Coding</h3>
-          <p class="skill-coding-description">one of the earlier skills that i develope it in this year and i have learn coding from about 9 months ago and the first language that i start with it is the python but not finsh it because i started to learn the powerful language c++ and it was realy nice and deep language and i've learned it in about 6 months and it was really fun especilly the challenges that i played in codewars and other websites. </p>
+      </nav>
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6 ">
+          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-title"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-title"><i class=" fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6 ">
+          <img src="images/iphone6.png" alt="iphone-mockup" class="img-dog-title">
         </div>
       </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>If you want to know more about this monster contact me by clicking Monster Me </h3>
-        <p>This monster will be so happy if you message him in your spare time and remember just the monsters messaging each other</p>
-        <a class="btn" href="mailto:hasanluy851@gmail.com">Monster Me</a>
+    </div>
+  </section>
+  <!-- Features -->
+  <section id="features" class="feature white-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 feature-box">
+          <i class=" fa-4x fas fa-check-circle img-feature d-flex justify-content-center"></i>
+          <h3 class="feature-title">Easy to use.</h3>
+          <p class="feature-p">So easy to use, even your dog could do it.</p>
+        </div>
+        <div class="col-lg-4 feature-box">
+          <i class=" fa-4x fas fa-bullseye img-feature d-flex justify-content-center"></i>
+          <h3 class="feature-title">Elite Clientele</h3>
+          <p class="feature-p">We have all the dogs, the greatest dogs.</p>
+        </div>
+        <div class="col-lg-4 feature-box">
+          <i class=" fa-4x fas fa-heart img-feature d-flex justify-content-center"></i>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p class="feature-p">Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+  </section>
+  <!-- Testimonials -->
+  <section id="testimonials" class="colored-section">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-img" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-img" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!-- Press -->
+  <section id="press" class="colored-section">
+    <img src="images/techcrunch.png" alt="tc-logo" class="press-img">
+    <img src="images/tnw.png" alt="tnw-logo" class="press-img">
+    <img src="images/bizinsider.png" alt="biz-insider-logo" class="press-img">
+    <img src="images/mashable.png" alt="mashable-logo" class="press-img">
+  </section>
+  <!-- Pricing -->
+  <section id="pricing" class="white-section">
+    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+    <div class="row r-pricing">
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="section-heading">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-outline-primary btn-lg btn-block"> Sign up</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="section-heading">$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-primary btn-lg btn-block"> Sign up</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="section-heading">$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-primary btn-lg btn-block"> Sign up</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/">Twitter</a>
-      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-      <a class="footer-link" href="https://hassanluy.github.io/HaSaN/">My WebSite</a>
-      <p class="footer">© 2021 HaSaN.</p>
+  </section>
+  <!-- Call to Action -->
+  <section id="cta" class="colored-section">
+    <div class="container-fluid">
+      <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button type="button" class="btn btn-lg btn-dark icon-cta download-title"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-lg btn-outline-dark icon-cta download-title"><i class="fab fa-google-play"></i> Download</button>
     </div>
-  </body>
+  </section>
+  <!-- Footer -->
+  <footer id="footer" class="whtie-section">
+    <div class="container-fluid">
+      <i class="fab fa-twitter footer-icon"></i>
+      <i class="fab fa-facebook-f footer-icon"></i>
+      <i class="fab fa-instagram footer-icon"></i>
+      <i class="far fa-envelope footer-icon"></i>
+      <p>© Copyright 2018 TinDog</p>
+    </div>
+  </footer>
+</body>
+
 </html>
